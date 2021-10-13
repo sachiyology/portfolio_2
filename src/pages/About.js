@@ -66,12 +66,12 @@ const field = [
 	},
 	{
 		index: 3,
-		name: 'E-commerce',
+		name: 'Financial Crime Prevention System',
 		value: 15
 	},
 	{
 		index: 4,
-		name: 'Financial Crime Prevention System',
+		name: 'E-commerce',
 		value: 25
 	},
 	{
@@ -94,7 +94,7 @@ const skill = [
 	},
 	{
 		index: 2,
-		name: 'Design test cases',
+		name: 'Designing test cases',
 		value: 15
 	},
 	{

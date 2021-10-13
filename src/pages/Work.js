@@ -12,8 +12,8 @@ export default function Work(props) {
 					<a href="https://bookmark-app-sachiyo.herokuapp.com/">
 						Project 2 - bookmark
 					</a>
-				</div>
-				<div className="container-02">
+					{/* </div>
+				<div className="container-02"> */}
 					<a href="https://note-taking-app-sachiyo.herokuapp.com/">
 						Project 3 - note-taking app
 					</a>
