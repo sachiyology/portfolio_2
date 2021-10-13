@@ -1,0 +1,259 @@
+// @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
+@import "reset";
+@import "grid";
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&display=swap');
+
+*{
+  font-family: 'Amaranth', sans-serif !important;
+
+}
+
+body {
+  background-image:url("/img/tokyo5.gif");
+  background-repeat:  no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: 0% -17%;
+  }
+
+.NavBar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(6,17,67);
+  a{
+    margin-top: 15px;
+    font-size: 47px;
+
+  }
+}
+.HomePage {
+  // display: inline-block;
+  background:white;
+  filter:alpha(opacity=80);
+  -moz-opacity:0.8;
+  -khtml-opacity:0.8;
+  opacity:0.8;
+  margin:70px;
+  padding:25px;
+  -webkit-box-shadow:0 1px 2px #ccc;
+  -moz-box-shadow:0 1px 2px #ccc;
+  box-shadow:0 1px 2px #ccc;
+  animation: fadeIn 4s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+  height:300px;
+  margin-top: 20%;
+  @keyframes fadeIn {
+  0% {
+    opacity: 0.8;
+    }
+  100% {
+    opacity: 0.8;
+    }
+  }
+  .container {
+    width: 80%;
+    margin: 15px auto;
+  }
+  h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  }
+  h3{
+    display: flex;
+    justify-content: center;
+    } 
+    div{
+    text-align: center;
+    }
+    .loading span {
+      position: relative;
+       display: inline-block;
+      margin: 0 -.05em;
+      color: black;
+      animation: loading-parent 3s infinite;
+      font-size: 75px;
+      margin-right: 15px;
+      align-items: center;
+      justify-content: right ;
+      
+  
+   }
+    .loading span::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: attr(data-text);
+      color: #fff;
+      opacity: 0;
+      transform: rotateY(-90deg);
+      animation: loading 5s infinite;
+    }
+    .loading span:nth-child(2)::after {
+      animation-delay: .2s;
+    }
+    .loading span:nth-child(3)::after {
+      animation-delay: .4s;
+    }
+    .loading span:nth-child(4)::after {
+      animation-delay: .6s;
+    }
+    .loading span:nth-child(5)::after {
+      animation-delay: .8s;
+    }
+    .loading span:nth-child(6)::after {
+      animation-delay: 1s;
+    }
+    .loading span:nth-child(7)::after {
+      animation-delay: 1.2s;
+    }
+    @keyframes loading-parent {
+      0%, 35%, 100% {
+        color: Black;
+      }
+      60%, 80% {
+        color: #fff;
+      }
+    }
+    @keyframes loading-child {
+      0% {
+        opacity: 1;
+      }
+      25%, 100% {
+        opacity: 0;
+      }
+    }
+    @keyframes typing { from { width: 0; } }
+    @keyframes blink-caret { 50% { border-color: transparent; } }
+
+h2 { 
+	font: bold 300% Consolas, Monaco, monospace;
+	border-right: .1em solid black;
+	width: 16.5em; 
+	width: 21ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: typing 7s steps(21, end),
+	blink-caret .5s step-end infinite alternate;
+}
+  
+  }
+
+.SkillPage {
+  background:white;
+  filter:alpha(opacity=80);
+  -moz-opacity:0.8;
+  -khtml-opacity:0.8;
+  opacity:0.8;
+  margin:70px;
+  padding:25px;
+  -webkit-box-shadow:0 1px 2px #ccc;
+  -moz-box-shadow:0 1px 2px #ccc;
+  box-shadow:0 1px 2px #ccc;
+  animation: fadeIn 4s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+  height:500px;
+  margin-top: 20%;
+  h1{
+    width: 100%;
+    text-align: center;
+  }
+  h2{
+    width: 100%;
+    text-align: center;
+    color: #8884d8;
+  }
+  #wrapper{
+    display: flex;
+    justify-content: space-around;
+  }
+  #h2{
+    display: flex;
+  }
+  
+}
+
+.ContactPage{
+  background:white;
+  filter:alpha(opacity=80);
+  -moz-opacity:0.8;
+  -khtml-opacity:0.8;
+  opacity:0.8;
+  margin:70px;
+  padding:25px;
+  -webkit-box-shadow:0 1px 2px #ccc;
+  -moz-box-shadow:0 1px 2px #ccc;
+  box-shadow:0 1px 2px #ccc;
+  height:300px;
+  margin-top: 20%;
+  
+  #links{
+    text-align: center;
+  }
+  h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.WorkPage {
+  background:white;
+  filter:alpha(opacity=80);
+  -moz-opacity:0.8;
+  -khtml-opacity:0.8;
+  opacity:0.8;
+  margin:70px;
+  padding:25px;
+  -webkit-box-shadow:0 1px 2px #ccc;
+  -moz-box-shadow:0 1px 2px #ccc;
+  box-shadow:0 1px 2px #ccc;
+  height:300px;
+  margin-top: 20%;
+  animation: fadeIn 4s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+  align-items: center;
+  justify-content: center;
+  h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-shine {
+    
+    color: #FFF;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 45px;
+    width: 200px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+  }
+  
+  .btn-shine:hover {
+    border-color: #FFF;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: transparent;
+    outline-offset: 12px;
+    text-shadow: 2px 2px 3px #000;
+  }
+  .btn-shine.is-pink:hover {
+    text-shadow: 2px 2px 3px #e00364;/* text-shadowを背景色に変更する*/
+  }
+  a{
+    font-size: 50px;
+    color: #8884d8;
+  }
+  div{
+    text-align: center;
+  }
+}

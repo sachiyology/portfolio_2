@@ -1,0 +1,433 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@1,700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: 'Amaranth', sans-serif !important;
+}
+
+body {
+  background-image: url("/img/tokyo5.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: 0% -17%;
+}
+
+.NavBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  background-color: #061143;
+}
+
+.NavBar a {
+  margin-top: 15px;
+  font-size: 47px;
+}
+
+.HomePage {
+  background: white;
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  margin: 70px;
+  padding: 25px;
+  -webkit-box-shadow: 0 1px 2px #ccc;
+  box-shadow: 0 1px 2px #ccc;
+  -webkit-animation: fadeIn 4s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+          animation: fadeIn 4s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+  height: 300px;
+  margin-top: 20%;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+.HomePage .container {
+  width: 80%;
+  margin: 15px auto;
+}
+
+.HomePage h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 36px;
+}
+
+.HomePage h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.HomePage div {
+  text-align: center;
+}
+
+.HomePage .loading span {
+  position: relative;
+  display: inline-block;
+  margin: 0 -.05em;
+  color: black;
+  -webkit-animation: loading-parent 3s infinite;
+          animation: loading-parent 3s infinite;
+  font-size: 75px;
+  margin-right: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.HomePage .loading span::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: attr(data-text);
+  color: #fff;
+  opacity: 0;
+  -webkit-transform: rotateY(-90deg);
+          transform: rotateY(-90deg);
+  -webkit-animation: loading 5s infinite;
+          animation: loading 5s infinite;
+}
+
+.HomePage .loading span:nth-child(2)::after {
+  -webkit-animation-delay: .2s;
+          animation-delay: .2s;
+}
+
+.HomePage .loading span:nth-child(3)::after {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+.HomePage .loading span:nth-child(4)::after {
+  -webkit-animation-delay: .6s;
+          animation-delay: .6s;
+}
+
+.HomePage .loading span:nth-child(5)::after {
+  -webkit-animation-delay: .8s;
+          animation-delay: .8s;
+}
+
+.HomePage .loading span:nth-child(6)::after {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.HomePage .loading span:nth-child(7)::after {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+@-webkit-keyframes loading-parent {
+  0%, 35%, 100% {
+    color: Black;
+  }
+  60%, 80% {
+    color: #fff;
+  }
+}
+
+@keyframes loading-parent {
+  0%, 35%, 100% {
+    color: Black;
+  }
+  60%, 80% {
+    color: #fff;
+  }
+}
+
+@-webkit-keyframes loading-child {
+  0% {
+    opacity: 1;
+  }
+  25%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loading-child {
+  0% {
+    opacity: 1;
+  }
+  25%, 100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.HomePage h2 {
+  font: bold 300% Consolas, Monaco, monospace;
+  border-right: .1em solid black;
+  width: 16.5em;
+  width: 21ch;
+  margin: 2em 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 7s steps(21, end), blink-caret 0.5s step-end infinite alternate;
+          animation: typing 7s steps(21, end), blink-caret 0.5s step-end infinite alternate;
+}
+
+.SkillPage {
+  background: white;
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  margin: 70px;
+  padding: 25px;
+  -webkit-box-shadow: 0 1px 2px #ccc;
+  box-shadow: 0 1px 2px #ccc;
+  -webkit-animation: fadeIn 4s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+          animation: fadeIn 4s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+  height: 500px;
+  margin-top: 20%;
+}
+
+.SkillPage h1 {
+  width: 100%;
+  text-align: center;
+}
+
+.SkillPage h2 {
+  width: 100%;
+  text-align: center;
+  color: #8884d8;
+}
+
+.SkillPage #wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.SkillPage #h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ContactPage {
+  background: white;
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  margin: 70px;
+  padding: 25px;
+  -webkit-box-shadow: 0 1px 2px #ccc;
+  box-shadow: 0 1px 2px #ccc;
+  height: 300px;
+  margin-top: 20%;
+}
+
+.ContactPage #links {
+  text-align: center;
+}
+
+.ContactPage h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.WorkPage {
+  background: white;
+  filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  margin: 70px;
+  padding: 25px;
+  -webkit-box-shadow: 0 1px 2px #ccc;
+  box-shadow: 0 1px 2px #ccc;
+  height: 300px;
+  margin-top: 20%;
+  -webkit-animation: fadeIn 4s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+          animation: fadeIn 4s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.WorkPage h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.WorkPage .btn-shine {
+  color: #FFF;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 45px;
+  width: 200px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  -webkit-transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+  transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+.WorkPage .btn-shine:hover {
+  border-color: #FFF;
+  -webkit-box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: transparent;
+  outline-offset: 12px;
+  text-shadow: 2px 2px 3px #000;
+}
+
+.WorkPage .btn-shine.is-pink:hover {
+  text-shadow: 2px 2px 3px #e00364;
+  /* text-shadowを背景色に変更する*/
+}
+
+.WorkPage a {
+  font-size: 50px;
+  color: #8884d8;
+}
+
+.WorkPage div {
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */
