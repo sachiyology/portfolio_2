@@ -7,18 +7,18 @@ export default function Work(props) {
 			<div className="WorkPage">
 				<h1>My Projects</h1>
 				{/* <h2>Professional</h2> */}
-
-				<div className="container">
-					<a href="https://bookmark-app-sachiyo.herokuapp.com/">
-						Project 2 - bookmark
-					</a>
-					{/* </div>
-				<div className="container-02"> */}
-					<a href="https://note-taking-app-sachiyo.herokuapp.com/">
-						Project 3 - note-taking app
-					</a>
+				<div>
+					<div className="container">
+						<a href="https://bookmark-app-sachiyo.herokuapp.com/">
+							Project 2 - bookmark
+						</a>
+					</div>
+					<div className="container-02">
+						<a href="https://note-taking-app-sachiyo.herokuapp.com/">
+							Project 3 - note-taking app
+						</a>
+					</div>
 				</div>
-
 				{/* <table className="table table-bordered border-primary" width="auto"> 
 						<thead>
 							<tr>
