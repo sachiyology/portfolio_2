@@ -5,7 +5,7 @@ export default function Work(props) {
 	return (
 		<>
 			<div className="WorkPage">
-				<h1>My Work</h1>
+				<h1>My Projects</h1>
 				{/* <h2>Professional</h2> */}
 
 				<div className="container">
